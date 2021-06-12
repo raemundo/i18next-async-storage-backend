@@ -46,8 +46,7 @@
     "postversion": "git push && git push --tags"
   },
   "author": [
-    "Jan Mühlemann <jan.muehlemann@gmail.com> (https://github.com/jamuhl)",
-    "Tim Brandin <tim.brandin@gmail.com> (https://github.com/timbrandin)"
+    "Raemundo <eimooamai@outlook.com> (https://github.com/raemundo)"
   ],
   "license": "MIT"
 }
