@@ -8,8 +8,8 @@
     "i18next",
     "i18next-backend"
   ],
-  "homepage": "https://github.com/timbrandin/i18next-async-storage-backend",
-  "bugs": "https://github.com/timbrandin/i18next-async-storage-backend/issues",
+  "homepage": "https://github.com/raemundo/i18next-rn-asyncstorage-backend",
+  "bugs": "https://github.com/raemundo/i18next-rn-asyncstorage-backend/issues",
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "6.23.0",

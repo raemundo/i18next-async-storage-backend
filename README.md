@@ -4,11 +4,11 @@ This is a i18next cache layer to be used in the browser. It will load and cache 
 
 # Getting started
 
-Source can be loaded via [npm](https://www.npmjs.com/package/i18next-async-storage-cache) or [downloaded](https://github.com/timbrandin/i18next-async-storage-cache/blob/master/i18nextAsyncStorageCache.min.js) from this repo.
+Source can be loaded via [npm](https://www.npmjs.com/package/i18next-async-storage-cache) or [downloaded](https://github.com/raemundo/i18next-async-storage-cache/blob/master/i18nextAsyncStorageCache.min.js) from this repo.
 
 ```
 # npm package
-$ npm install i18next-async-storage-backend
+$ npm install i18next-rn-asyncstorage-backend
 ```
 
 Wiring up with the chained backend:
@@ -16,7 +16,7 @@ Wiring up with the chained backend:
 ```js
 import i18next from 'i18next';
 import Backend from 'i18next-chained-backend';
-import AsyncStorageBackend from 'i18next-async-storage-backend'; // primary use cache
+import AsyncStorageBackend from 'i18next-rn-asyncstorage-backend'; // primary use cache
 import XHR from 'i18next-xhr-backend'; // fallback xhr load
 
 i18next
@@ -61,7 +61,7 @@ Wiring up a service backend with the chained backend:
 ```js
 import i18next from 'i18next';
 import Backend from 'i18next-chained-backend';
-import AsyncStorageBackend from 'i18next-async-storage-backend'; // primary use cache
+import AsyncStorageBackend from 'i18next-rn-asyncstorage-backend'; // primary use cache
 import ServiceBackend from 'i18next-service-backend'; // fallback service backend
 
 const TRANSLATION_BACKEND = 'https://api.spacetranslate.com';
