@@ -19,6 +19,7 @@
     "babel-preset-es2015-native-modules": "^6.9.4",
     "babel-preset-es2015-rollup": "3.0.0",
     "babel-preset-stage-0": "^6.22.0",
+    "cross-env": "^7.0.3",
     "eslint": "3.16.1",
     "eslint-config-airbnb": "14.1.0",
     "mkdirp": "0.5.1",
@@ -35,7 +36,7 @@
   "scripts": {
     "clean": "rimraf dist && mkdirp dist",
     "copy": "cp ./dist/umd/i18nextAsyncStorageBackend.min.js ./i18nextAsyncStorageBackend.min.js && cp ./dist/umd/i18nextAsyncStorageBackend.js ./i18nextAsyncStorageBackend.js",
-    "build:es": "BABEL_ENV=jsnext babel src --out-dir dist/es",
+    "build:es": "BABEL_ENV=jsnext; babel src --out-dir dist/es",
     "build:cjs": "babel src --out-dir dist/commonjs",
     "build:umd": "rollup -c rollup.config.js --format umd && rollup -c rollup.config.js --format umd --uglify",
     "build:amd": "rollup -c rollup.config.js --format amd && rollup -c rollup.config.js --format umd --uglify",
