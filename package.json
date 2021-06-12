@@ -36,7 +36,7 @@
   "scripts": {
     "clean": "rimraf dist && mkdirp dist",
     "copy": "cp ./dist/umd/i18nextAsyncStorageBackend.min.js ./i18nextAsyncStorageBackend.min.js && cp ./dist/umd/i18nextAsyncStorageBackend.js ./i18nextAsyncStorageBackend.js",
-    "build:es": "BABEL_ENV=jsnext; babel src --out-dir dist/es",
+    "build:es": "cross-env BABEL_ENV=jsnext; babel src --out-dir dist/es",
     "build:cjs": "babel src --out-dir dist/commonjs",
     "build:umd": "rollup -c rollup.config.js --format umd && rollup -c rollup.config.js --format umd --uglify",
     "build:amd": "rollup -c rollup.config.js --format amd && rollup -c rollup.config.js --format umd --uglify",
