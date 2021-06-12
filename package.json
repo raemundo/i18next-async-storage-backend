@@ -29,7 +29,9 @@
     "rollup-plugin-uglify": "1.0.1",
     "yargs": "6.6.0"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.5"
+  },
   "scripts": {
     "clean": "rimraf dist && mkdirp dist",
     "copy": "cp ./dist/umd/i18nextAsyncStorageBackend.min.js ./i18nextAsyncStorageBackend.min.js && cp ./dist/umd/i18nextAsyncStorageBackend.js ./i18nextAsyncStorageBackend.js",
